@@ -1,0 +1,71 @@
+---
+# defaults file for ansible-role-java-oracle-jdk8
+
+force_java_install: false
+
+java_installer_force_download: true
+java_installer_force_overwrite: true
+java_installer_keep: true
+java_installer_local: false
+
+java_bins_jdk: [ 'javah', 'javap', 'jmap', 'extcheck', 'pack200', 'jrunscript', 'jinfo', 'jcontrol', 'jmc', 'keytool', 'schemagen', 'jjs', 'jvisualvm', 'policytool', 'rmid', 'wsgen', 'javaws', 'javadoc', 'rmic', 'servertool', 'jstatd', 'java', 'jdb', 'jhat', 'jar', 'rmiregistry', 'jps', 'native2ascii', 'xjc', 'javapackager', 'javac', 'wsimport', 'unpack200', 'tnameserv', 'javafxpackager', 'jdeps', 'jsadebugd', 'jcmd', 'appletviewer', 'idlj', 'jconsole', 'jarsigner', 'serialver', 'orbd', 'jstack', 'jstat' ]
+java_bins_server_jre: [ 'extcheck', 'pack200', 'jrunscript', 'keytool', 'schemagen', 'jjs', 'rmid', 'wsgen', 'rmic', 'servertool', 'java', 'jar', 'rmiregistry', 'jps', 'native2ascii', 'xjc', 'javac', 'wsimport', 'unpack200', 'tnameserv', 'jdeps', 'jcmd', 'idlj', 'jarsigner', 'orbd' ]
+
+java_bins_priority: 9
+java_bins_update: true
+
+java_type: jdk  # jdk or server-jre
+
+# Server JRE or JDK 8.251
+java_version: 8
+java_update: 251
+java_build: '08'
+java_download_code: '3d5a2bb8f8d4428bbe94aed7ec7ae784'
+
+# Server JRE or JDK 8.221
+# java_version: 8
+# java_update: 221
+# java_build: '11'
+# java_download_code: '230deb18db3e4014bb8e3e8324f81b43'
+
+# Server JRE or JDK 8.201
+# java_version: 8
+# java_update: 201
+# java_build: '09'
+# java_download_code: '42970487e3af4f5aa5bca3f542482c60'
+
+# Server JRE or JDK 8.181
+# java_version: 8
+# java_update: 181
+# java_build: '13'
+# java_download_code: '96a7b8442fe848ef90c96a2fad6ed6d1'
+
+# Server JRE or JDK 8.171
+# java_version: 8
+# java_update: 171
+# java_build: '11'
+# java_download_code: '512cd62ec5174c3487ac17c61aaa89e8'
+
+# Server JRE or JDK 8.172
+# java_version: 8
+# java_update: 172
+# java_build: '11'
+# java_download_code: 'a58eab1ec242421181065cdc37240b08'
+
+# Server JRE or JDK 8.161
+# java_version: 8
+# java_update: 161
+# java_build: '12'
+# java_download_code: '2f38c3b165be4555a1fa6e98c45e0808'
+
+# Server JRE or JDK 8.162
+# java_update: 162
+# java_build: '12'
+# java_download_code: '0da788060d494f5095bf8624735fa2f1'
+
+java_platform: linux-x64
+
+java_usr_folder: /usr/java
+java_latest_folder: /usr/java/latest
+
+java_download_base_url: https://download.oracle.com/otn/java/jdk
